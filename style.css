@@ -7,90 +7,81 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.card-main-container {
+body {
     width: 100%;
-    height: 100vh;
+    background-color: rgb(34, 232, 254);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.card-main {
-    height: 200px;
-    width: 22rem;
-    border-radius: 1rem;
-    position: relative;
-    transform-style: preserve-3d;
-    justify-content: center;
-    transition: all .4s ease;
-    align-items: center;
+.registration-container {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
     margin: 1rem;
 }
 
-.card-main:hover {
-    transform: rotateY(180deg);
+.registration-container h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
-.front-card {
-    width: 100%;
-    height: 100%;
+.registration-container h2::after {
+    content: '';
     position: absolute;
-    border-radius: 1rem;
-    backface-visibility: hidden;
-    background-image: linear-gradient(to top right, rgb(228, 4, 4), rgb(166, 0, 212));
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 20%;
+    border-radius: 2px;
+    background-color: #e65b00;
+}
+
+.three-details-item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
+    flex-wrap: wrap;
 }
 
-.back-card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 1rem;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    background-color: rgb(239, 15, 15);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+hr {
+    width: 70%;
+    height: 1px;
+    background-color: #d2d2d2;
+    margin: 1rem 0;
+    border: none;
 }
 
-.front-card img {
-    margin-bottom: 1.2rem;
-    width: 15%;
+.personal-details,
+.identity-details {
+    margin: .2rem 0;
 }
 
-.front-card p {
-    margin-top: 1rem;
+.personal-details label,
+.identity-details label {
+    margin: .5rem 1rem;
     font-size: .9rem;
+    font-weight: 600;
+}
+
+.three-details-item input {
+    outline: none;
+    font-size: .8rem;
+    border-radius: .2rem;
+    border: 1px solid rgb(113, 101, 101);
+    padding: .1rem;
+    background-color: transparent;
+}
+
+.submit-btn {
+    border: none;
+    background-color: #e65b00;
     color: white;
-}
-
-h2 {
-    color: white;
-    font-weight: bold;
-}
-
-.btn {
-    margin-top: 1rem;
-
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.back-light {
-    color: #fff;
+    padding: .3rem 1rem;
+    display: block;
+    width: 50%;
+    margin: .6rem auto;
+    border-radius: 2rem;
+    font-size: 1.1rem;
 }
